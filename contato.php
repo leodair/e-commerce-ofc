@@ -2,9 +2,11 @@
 <html>
 <head>
     <link rel="stylesheet" href="loja.css">
-    <title>leodair_construções</title>
+    <title>contato</title>
 </head>
 <body>
+
+
 
     <nav class="navbar">
     <div class="logo">LEODAIR_CONSTRU</div>
@@ -21,15 +23,3 @@
 
 </body>
 </html>
-
-
-<?php
-session_start();
-
-if(!isset($_SESSION['usuario'])) {
-    header("Location: index.php");
-    exit();
-}
-?>
-
-<a href="logout.php">Sair</a>

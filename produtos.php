@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="loja.css">
-    <title>leodair_construções</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produtos</title>
 </head>
 <body>
-
-    <nav class="navbar">
+    
+<nav class="navbar">
     <div class="logo">LEODAIR_CONSTRU</div>
     <ul class="nav-links">
-        <li><a href="index.php">Início</a></li>
+        <li><a href="dashboard.php">Início</a></li>
         <li><a href="produtos.php">Produtos</a></li>
         <li><a href="carrinho.php">Carrinho</a></li>
         <li><a href="contato.php">Contato</a></li>
@@ -18,18 +20,5 @@
     </nav>
 
     
-
 </body>
 </html>
-
-
-<?php
-session_start();
-
-if(!isset($_SESSION['usuario'])) {
-    header("Location: index.php");
-    exit();
-}
-?>
-
-<a href="logout.php">Sair</a>

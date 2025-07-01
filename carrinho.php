@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="loja.css">
-    <title>leodair_construções</title>
+    <title>carrinho</title>
 </head>
 <body>
 
@@ -21,15 +21,3 @@
 
 </body>
 </html>
-
-
-<?php
-session_start();
-
-if(!isset($_SESSION['usuario'])) {
-    header("Location: index.php");
-    exit();
-}
-?>
-
-<a href="logout.php">Sair</a>
